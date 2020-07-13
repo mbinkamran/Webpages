@@ -1,9 +1,44 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+body {                                         /*You do not need to nullify padding and margin as well as define border-box sizing if you are using Bootstrap 4, since Bootstrap 4 does that itself*/
 	font-size: 16px;
 	font-family: 'Oxygen', sans-serif;
 	background: #61122F;
 	color: #FFF;
+}
+
+#header-nav {
+	background: #F6b319;
+}
+
+#logo_img {
+	background: url("tick.png") no-repeat;
+	height: 100px;
+	width: 77px;
+}
+
+/*Decoration to logo*/
+
+.navbar-brand a:hover, .navbar-brand a:focus {           /*Here if we write h1:hover, it would not work since decoration is triggered due to <a> tag */
+	text-decoration: none;
+}
+
+/*Brand name*/
+.navbar-brand h1 {
+	font-family: 'Lora', serif;
+	color: #557C3E;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px #222;
+	line-height: 0.9;
+}
+
+/*Certificate*/
+.navbar-brand p {
+	color: #000;
+	text-transform: uppercase;
+	font-size: 0.8em;
+}
+
+.navbar-brand p span {
+	vertical-align: middle;
 }
