@@ -2,4 +2,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Oxygen', sans-serif;
+	background: #61122F;
+	color: #FFF;
 }
