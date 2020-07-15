@@ -10,8 +10,10 @@ body {                                         /*You do not need to nullify padd
 }
 
 #logo_img {
+	position: relative;
+	bottom: 10px;  
 	background: url("tick.png") no-repeat;
-	height: 100px;
+	height: 90px;
 	width: 77px;
 }
 
@@ -41,4 +43,72 @@ body {                                         /*You do not need to nullify padd
 
 .navbar-brand p span {
 	vertical-align: middle;
+}
+
+/*Testing pourposes
+
+#button_color {
+	background: white;
+}
+ */
+
+#navigation_toggle li {
+	margin-right: 2px;
+	margin-left: 2px;
+}
+
+#navigation_toggle {
+	color: #000;
+}
+
+#nav-list a {
+	color: #951C49;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: #E7E7E7;
+}
+
+#phone a {
+	text-align: right;
+	padding: 0;
+	font-size: 1.8em;
+}
+
+#phone div {
+	text-align: right;
+	padding-right: 3px;
+	color: #557C3E;
+}
+
+button#button_color /*, #navigation_toggle .nav-item span*/{
+	border: 1px solid #61122F;
+}
+
+button#button_color {
+	position: relative;
+	bottom: 3px;
+}
+
+ul {
+	display: inline;
+}
+
+@media (max-width: 399px) {
+	.navbar-brand h1 {
+		font-size: 7vw;
+	}
+	
+	.navbar-brand span {
+		font-size: 5vw;
+	}
+}
+
+@media (max-width: 991px) {
+	
+	#navigation_toggle a svg{
+		font-size: 1.4em;
+		margin-right: 10px;
+	}
 }

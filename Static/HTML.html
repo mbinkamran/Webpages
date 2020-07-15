@@ -7,31 +7,51 @@
 <meta name = "viewport" content = "width = device-width, initial-scale = 1">
 <meta http-equiv = "X-UA-Compatible" content = "IE = edge">
 <link rel = "stylesheet" type = "text/css" href = "bootstrap.min.css">
-<link rel = "stylesheet" type = "text/css" href = "Style.css">                          <!-- Our stylesheet needs to be after the bootstrap so that we can overlap styles -->
+<link rel = "stylesheet" type = "text/css" href = "Style.css">                                                              <!-- Our stylesheet needs to be after the bootstrap so that we can overlap styles -->
 <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body> 
-<!-- Structure here -->
+
 <header>
-	<nav id = "header-nav" class = "navbar navbar-expand-lg py-0">                   <!-- Class-added = 1.1 -->
-		<div class = "container">
-			<div class = "navbar navbar-expand-lg p-0" >                             <!-- Class-added = 2.1 -->   
-				<a href = "HTML.html" class = "d-none d-md-block d-lg-block">        <!-- Class-added = 3.1.1 -->
+	<nav id = "header-nav" class = "navbar navbar-expand-lg py-0">                                                          <!-- Class-added = 1.1 -->
+		<div class = "container"> 
+			<div class = "navbar navbar-expand-lg p-0 w-100 navbar-light" >                                                                    <!-- Class-added = 2.1 --> 
+				<!-- *Logo and Brand name* -->
+				<a href = "HTML.html" class = "d-none d-md-block d-lg-block">                                               <!-- Class-added = 3.1.1 -->
 					<div id = "logo_img" alt = "Logo Image" ></div>
 				</a>
 				
-				<div class = "navbar-brand">                                         <!-- Class-added = 4 -->
-					<a href = "HTML.html"><h1 class = "m-0">Tick Restaurant</h1></a> <!-- Class-added = 5 -->
+				<div class = "navbar-brand mr-auto">                                                                                <!-- Class-added = 4 -->
+					<a href = "HTML.html"><h1 class = "m-0">Tick Restaurant</h1></a>                                        <!-- Class-added = 5 -->
 					<p>
 						<img src = "star.png" alt = "Doc">
 						<span>Hygiene Certified</span>
 					</p>
 				</div>
+				<!-- *Menu Buttons and toggle* -->
+				<button id = "button_color" class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navigation_toggle" aria-expanded = "false" aria-controls = "navigation_toggle" aria-label = "toggle navigation">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
 				
-				
+				<div class = "collapse navbar-collapse" id = "navigation_toggle">
+					<ul class = "navbar-nav mt-2 mt-lg-0 ml-auto" id = "nav-list">
+						<li class = "nav-item">
+							<a href = "#" class = "nav-link active"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-menu-up " fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15 3.207v9a1 1 0 0 1-1 1h-3.586A2 2 0 0 0 9 13.793l-1 1-1-1a2 2 0 0 0-1.414-.586H2a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-13 11a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3.586a1 1 0 0 0-.707.293l-1.353 1.354a.5.5 0 0 1-.708 0L6.293 14.5a1 1 0 0 0-.707-.293H2z"/><path fill-rule="evenodd" d="M15 5.207H1v1h14v-1zm0 4H1v1h14v-1zm-13-5.5a.5.5 0 0 0 .5.5h6a.5.5 0 1 0 0-1h-6a.5.5 0 0 0-.5.5zm0 4a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0-.5.5zm0 4a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0-.5.5z"/></svg><br class = "d-none d-lg-inline"> <span>Menu</span></a>
+						</li>
+						<li class = "nav-item">
+							<a href = "#" class = "nav-link"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg><br class = "d-none d-lg-inline"> <span>About</span></a>
+						</li>
+						<li class = "nav-item">
+							<a href = "#" class = "nav-link"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg><br class = "d-none d-lg-inline"> <span>Awards</span></a>
+						</li>
+						<li class = "nav-item d-none d-lg-inline" id = "phone">
+							<a href = "tel:666-666-666" class = "nav-link" >666-666-666</a><div><span>*We deliver</span></div>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
+		</div>  
 	</nav>
 </header>
 
