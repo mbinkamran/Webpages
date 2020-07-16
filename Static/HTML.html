@@ -13,7 +13,7 @@
 </head>
 <body> 
 
-<header>
+<header class = "mb-2">                                              <!-- To add a margin between <section> (jumbotron) and <header> -->
 	<nav id = "header-nav" class = "navbar navbar-expand-lg py-0">                                                          <!-- Class-added = 1.1 -->
 		<div class = "container"> 
 			<div class = "navbar navbar-expand-lg p-0 w-100 navbar-light" >                                                                    <!-- Class-added = 2.1 --> 
@@ -25,7 +25,7 @@
 				<div class = "navbar-brand mr-auto">                                                                                <!-- Class-added = 4 -->
 					<a href = "HTML.html"><h1 class = "m-0">Tick Restaurant</h1></a>                                        <!-- Class-added = 5 -->
 					<p>
-						<img src = "star.png" alt = "Doc">
+						<img src = "Images/star.png" alt = "Doc">
 						<span>Hygiene Certified</span>
 					</p>
 				</div>
@@ -53,8 +53,24 @@
 			</div>
 		</div>  
 	</nav>
+	<!-- Phone no. bar -->
+	<aside class = "navbar navbar-expand-lg d-lg-none d-block pt-0">
+		<div class = "container">
+			<a href = "tel:666-666-666" class = "nav-link w-100 pb-0 px-0"><div id = "phone_drop" class = "navbar navbar-expand-lg justify-content-center"><svg width="0.9em" height="0.9em" viewBox="0 0 16 16" class="bi bi-telephone-fill mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/></svg>
+				666-666-666</div></a><p class = "mx-auto">*We deliver</p>
+		</div>
+	</aside>
 </header>
 
+
+<!-- Jumbotron -->
+<section>
+	<div class = "container" id = "content_jumb">
+		<div class = "jumbotron p-0">                  										 <!-- here, as a result of container tags used in both <header> and <section> the edges of jumbotron and navigation bar align exactly -->
+			<img src = "Images/Restuarant sitting area 767px.jpg" alt = "Restaurant Inn" class = "img-fluid d-lg-none d-md-none d-block">
+		</div>
+	</div>
+</section>
 <script type = "text/Javascript" src = "jquery-3.5.1.min.js"></script>
 <script type = "text/Javascript" src = "bootstrap.min.js"></script>
 <script type = "text/Javascript" src = "Script.js"></script>

@@ -9,10 +9,21 @@ body {                                         /*You do not need to nullify padd
 	background: #F6b319;
 }
 
+aside div#phone_drop {
+	background: #F6b319;
+	border-radius: 5px;
+	font-size: 1.8em;
+	color: #951C49;
+}
+
+aside .container #phone_drop:hover {
+	background: #E7E7E7;
+}
+
 #logo_img {
 	position: relative;
 	bottom: 10px;  
-	background: url("tick.png") no-repeat;
+	background: url("Images/tick.png") no-repeat;
 	height: 90px;
 	width: 77px;
 }
@@ -86,6 +97,10 @@ button#button_color /*, #navigation_toggle .nav-item span*/{
 	border: 1px solid #61122F;
 }
 
+button#button_color:hover {
+	background: #E7E7E7;
+}
+
 button#button_color {
 	position: relative;
 	bottom: 3px;
@@ -94,6 +109,13 @@ button#button_color {
 ul {
 	display: inline;
 }
+
+/*<<<<<< Jumbotron Styling (Common styling in a media querys)  >>>>>>*/
+#content_jumb .jumbotron {
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+}
+
 
 @media (max-width: 399px) {
 	.navbar-brand h1 {
@@ -105,10 +127,34 @@ ul {
 	}
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991px) {      /*Later will try to find a way to merge it with other @media query*/
 	
 	#navigation_toggle a svg{
 		font-size: 1.4em;
 		margin-right: 10px;
 	}
 }
+
+/*<<<<<< Small Devices >>>>>>*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#content_jumb .jumbotron {
+		background: url("Images/Restuarant sitting area 991px.jpg") no-repeat;
+		height: 743px;
+	}
+}
+/*<<<<<< Medium Devices >>>>>>*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#content_jumb .jumbotron {
+		background: url("Images/Restuarant sitting area 1199px.jpg") no-repeat;
+		height: 899px;
+	}
+}
+/*<<<<<< Large Devices >>>>>>*/
+@media (min-width: 1200px) {
+	#content_jumb .jumbotron {
+		background: url("Images/Restuarant sitting area max_px.jpg") no-repeat;
+		height: 900px;
+	}
+}
+
+
