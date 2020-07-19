@@ -5,6 +5,8 @@ body {                                         /*You do not need to nullify padd
 	color: #FFF;
 }
 
+/*START<<<<<< Header >>>>>>--------------------*/
+
 #header-nav {
 	background: #F6b319;
 }
@@ -56,13 +58,6 @@ aside .container #phone_drop:hover {
 	vertical-align: middle;
 }
 
-/*Testing pourposes
-
-#button_color {
-	background: white;
-}
- */
-
 #navigation_toggle li {
 	margin-right: 2px;
 	margin-left: 2px;
@@ -110,12 +105,94 @@ ul {
 	display: inline;
 }
 
+/*END<<<<<< Header >>>>>>--------------------*/
+
+/*START<<<<<< Main Content >>>>>>--------------------*/
+
 /*<<<<<< Jumbotron Styling (Common styling in a media querys)  >>>>>>*/
-#content_jumb .jumbotron {
+#content_body .jumbotron {
 	box-shadow: 0 0 50px #3F0C1F;
 	border: 2px solid #3F0C1F;
+	border-radius: 10px;
 }
 
+/*<<<<<< Jumbotron Styling (Common styling in a media querys)  >>>>>>*/
+
+#menu_tile, #specials_tile, #map_tile {
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+/*<<<<<< Home tiles >>>>>>*/
+
+#menu_tile:hover, #specials_tile:hover, #map_tile:hover {
+	box-shadow: 0 1px 5px 1px #CCC;
+}
+
+#home_tiles div a:hover {
+	text-decoration: none;
+}
+
+#menu_tile {
+	background: url("Images/Menu.jpg") no-repeat center;
+}
+
+#specials_tile {
+	background: url("Images/Specials.jpg") no-repeat center;
+}
+
+#home_tiles div span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	width: 100%;
+	text-align: center;
+	color: #FFF;
+	background: #000;
+	opacity: 0.8;
+}
+
+/*END<<<<<< Main Content >>>>>>--------------------*/
+
+/*START<<<<<< Footer >>>>>>--------------------*/
+
+footer {
+	background: #222;
+	border-top: 0;
+}
+
+#hours, #address {
+	line-height: 1.8;
+}
+
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+
+#address p {
+	color: #557C3E;
+	font-size: 0.8em;
+	line-height: 1.8;
+	font-style: italic;
+}
+
+#testimonials p {
+	font-style: italic;
+}
+
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/*END<<<<<< Footer >>>>>>--------------------*/
+
+/*START<<<<<< All Media Queries >>>>>>--------------------*/
 
 @media (max-width: 399px) {
 	.navbar-brand h1 {
@@ -124,6 +201,23 @@ ul {
 	
 	.navbar-brand span {
 		font-size: 5vw;
+	}
+}
+
+hr {
+	background: white;
+	width: 50%;
+}
+
+@media (max-width: 575px) {
+	#home_tiles a div, #home_tiles a {
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	
+	#hours, #address, #testimonials {
+		text-align: center;
 	}
 }
 
@@ -137,24 +231,24 @@ ul {
 
 /*<<<<<< Small Devices >>>>>>*/
 @media (min-width: 768px) and (max-width: 991px) {
-	#content_jumb .jumbotron {
+	#content_body .jumbotron {
 		background: url("Images/Restuarant sitting area 991px.jpg") no-repeat;
 		height: 743px;
 	}
 }
 /*<<<<<< Medium Devices >>>>>>*/
 @media (min-width: 992px) and (max-width: 1199px) {
-	#content_jumb .jumbotron {
+	#content_body .jumbotron {
 		background: url("Images/Restuarant sitting area 1199px.jpg") no-repeat;
 		height: 899px;
 	}
 }
 /*<<<<<< Large Devices >>>>>>*/
 @media (min-width: 1200px) {
-	#content_jumb .jumbotron {
+	#content_body .jumbotron {
 		background: url("Images/Restuarant sitting area max_px.jpg") no-repeat;
 		height: 900px;
 	}
 }
 
-
+/*END<<<<<< All Media Queries >>>>>>--------------------*/
