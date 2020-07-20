@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Single Category</title>
+<meta charset = "UTF-8">
+<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+<meta http-equiv = "X-UA-Compatible" content = "IE = edge">
+<link rel = "stylesheet" type = "text/css" href = "bootstrap.min.css">
+<link rel = "stylesheet" type = "text/css" href = "Style.css">                                                              <!-- Our stylesheet needs to be after the bootstrap so that we can overlap styles -->
+<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body> 
+
+<header class = "mb-2">                                              <!-- To add a margin between <section> (jumbotron) and <header> -->
+	<nav id = "header-nav" class = "navbar navbar-expand-lg py-0">                                                          <!-- Class-added = 1.1 -->
+		<div class = "container"> 
+			<div class = "navbar navbar-expand-lg p-0 w-100 navbar-light" >                                                                    <!-- Class-added = 2.1 --> 
+				<!-- *Logo and Brand name* -->
+				<a href = "HTML.html" class = "d-none d-md-block d-lg-block">                                               <!-- Class-added = 3.1.1 -->
+					<div id = "logo_img" alt = "Logo Image" ></div>
+				</a>
+				
+				<div class = "navbar-brand mr-auto">                                                                                <!-- Class-added = 4 -->
+					<a href = "HTML.html"><h1 class = "m-0">Tick Restaurant</h1></a>                                        <!-- Class-added = 5 -->
+					<p>
+						<img src = "Images/star.png" alt = "Doc">
+						<span>Hygiene Certified</span>
+					</p>
+				</div>
+				<!-- *Menu Buttons and toggle* -->
+				<button id = "button_color" class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navigation_toggle" aria-expanded = "false" aria-controls = "navigation_toggle" aria-label = "toggle navigation">
+					<span class = "navbar-toggler-icon"></span>
+				</button>
+				
+				<div class = "collapse navbar-collapse" id = "navigation_toggle">
+					<ul class = "navbar-nav mt-2 mt-lg-0 ml-auto" id = "nav-list">
+						<li class = "nav-item">
+							<a href = "#" class = "nav-link active"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-menu-up " fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15 3.207v9a1 1 0 0 1-1 1h-3.586A2 2 0 0 0 9 13.793l-1 1-1-1a2 2 0 0 0-1.414-.586H2a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm-13 11a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-3.586a1 1 0 0 0-.707.293l-1.353 1.354a.5.5 0 0 1-.708 0L6.293 14.5a1 1 0 0 0-.707-.293H2z"/><path fill-rule="evenodd" d="M15 5.207H1v1h14v-1zm0 4H1v1h14v-1zm-13-5.5a.5.5 0 0 0 .5.5h6a.5.5 0 1 0 0-1h-6a.5.5 0 0 0-.5.5zm0 4a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0-.5.5zm0 4a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0-.5.5z"/></svg><br class = "d-none d-lg-inline"> <span>Menu</span></a>
+						</li>
+						<li class = "nav-item">
+							<a href = "#" class = "nav-link"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-info-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM8 5.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg><br class = "d-none d-lg-inline"> <span>About</span></a>
+						</li>
+						<li class = "nav-item">
+							<a href = "#" class = "nav-link"><svg width="1.2em" height="1.2em" viewBox="0 0 16 16" class="bi bi-star-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg><br class = "d-none d-lg-inline"> <span>Awards</span></a>
+						</li>
+						<li class = "nav-item d-none d-lg-inline" id = "phone">
+							<a href = "tel:666-666-666" class = "nav-link" >666-666-666</a><div><span>*We deliver</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>  
+	</nav>
+	<!-- Phone no. bar -->
+	<aside class = "navbar navbar-expand-lg d-lg-none d-block pt-0">
+		<div class = "container">
+			<a href = "tel:666-666-666" class = "nav-link w-100 pb-0 px-0"><div id = "phone_drop" class = "navbar navbar-expand-lg justify-content-center"><svg width="0.9em" height="0.9em" viewBox="0 0 16 16" class="bi bi-telephone-fill mr-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/></svg>
+				666-666-666</div></a><p class = "mx-auto">*We deliver</p>
+		</div>
+	</aside>
+</header>
+
+
+<!-- Menu items -->
+<section class = "container">
+	<nav aria-label = "breadcrumb">
+		<ol class = "breadcrumb breadcrumb-dividers-chevron mb-0" id = "breadcrumb_category">
+			<li class = "breadcrumb-item" id = "previous_item_breadcrumb"><a href = "HTML.html">Home</a></li>
+			<li class = "breadcrumb-item" id = "previous_item_breadcrumb"><a href = "menu-page.html">Menu</a></li>
+			<li class = "breadcrumb-item active" aria-current = "page" id = "current_item_breadcrumb">Single Category</li>
+		</ol>
+	</nav>
+	
+	<h2 class = "text-center" id = "onward_headings">Single Category</h2>
+	
+	<section class = "row">
+		<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A01</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>      <!-- We do not need class = "clearfix" in this, since Bootstrap 4 automatically deals with this problem -->
+				</div>
+			</div>
+			<hr class = "d-block d-md-none d-lg-none">
+		</div>
+			
+		<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A02</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+		<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A03</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+		<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A04</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A05</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A06</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A07</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A08</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A09</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A10</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A11</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+				<hr class = "d-block d-md-none d-lg-none">
+			</div>
+			
+			<div class = "col-md-6 mt-4" id = "menu_item">
+			<div class = "row">                            <!-- We need to declare class = "row" once again so that the inner cols stretch up according to this size -->
+				<div class = "col-xl-5">
+					<div id = "menu_item_img">
+						<img src = "http://placehold.jp/b8b8b8/000000/230x150.png" class = "img-fluid" width = "230" height = "150" alt = "Menu item image">
+						<span id = "menu_item_no">A12</span>
+						<span id = "menu_item_price">$14.99</span>
+					</div>
+				</div>
+				<div class = "col-xl-7" id = "menu_item_description">
+					<h3 id = "heading_menu_item">Lorem Ipsum</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra laoreet volutpat.</p>
+				</div>
+				</div>
+			</div>
+	</section>
+	
+</section>
+
+<footer class = "mt-3 pt-4">
+	<div class = "container">
+		<div class = "row">
+			<div id = "hours" class = "col-sm-4">
+			<span>Hours:</span><br>
+				Sat-Wed: 11:15am - 10:00pm<br>
+				Thurs: 11:15am - 2:30pm<br>
+				Friday Closed
+				<hr class = "d-block d-sm-none">
+			</div>
+			<div id = "address" class = "col-sm-4">
+			<span>Address:</span><br>
+				7105 Reisterstown Road<br>
+				Baltimore, MD 21215<br>
+				<p>*Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
+				<hr class = "d-block d-sm-none">
+			</div>
+			<div id = "testimonials" class = "col-sm-4">
+				<p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
+				<p>Very good!</p>
+			</div>
+		</div>
+		<div class = "text-center mt-4">
+			<span id = "copy">&copy; Copyright Tick Restaurant 2020</span>
+		</div>
+	</div>
+</footer>
+
+<script type = "text/Javascript" src = "jquery-3.5.1.min.js"></script>
+<script type = "text/Javascript" src = "bootstrap.min.js"></script>
+<script type = "text/Javascript" src = "Script.js"></script>
+</body>
+</html>
