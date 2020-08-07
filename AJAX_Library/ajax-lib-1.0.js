@@ -9,7 +9,7 @@
 		};
 	};
 
-	let makeRequest = function(requestURL, responseHandler, JSONresource) {  //to be used by the programmer
+	let ajaxMain.makeRequest = function(requestURL, responseHandler, JSONresource) {  //to be used by the programmer
 		let userRequest = verifyAjax();
 		userRequest.onreadystatechange = function() {
 			verifyConnection(userRequest, responseHandler, JSONresource);
