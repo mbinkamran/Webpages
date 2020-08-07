@@ -1,5 +1,5 @@
 (function(global) {
-	let ajaxMain = {}
+	let ajaxMain = {};
 
 	let verifyAjax = function() {
 		if (XMLHttpRequest) {
