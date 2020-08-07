@@ -12,7 +12,7 @@
 	let makeRequest = function(requestURL, responseHandler, JSONresource) {  //to be used by the programmer
 		let userRequest = verifyAjax();
 		userRequest.onreadystatechange = function() {
-			return verifyConnection(userRequest, responseHandler, JSONresource);
+			verifyConnection(userRequest, responseHandler, JSONresource);
 		};
 		userRequest.open("GET", requestURL, true);
 		userRequest.send(null);
@@ -22,9 +22,9 @@
 		if ((userRequest.readyState === 4) && (userRequest.status === 200)) {
 			responseHandler = function() {
 				if ((JSONresource) || (JSONresource === undefined)) {
-					return (JSON.parse(request.responseText));
+					return (JSON.parse(userRequest.responseText));
 				} else {
-					return (request.responseText);
+					return (userRequest.responseText);
 				};	
 			};
 			
